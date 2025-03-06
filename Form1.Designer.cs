@@ -40,7 +40,7 @@
             this.tujuh = new System.Windows.Forms.Button();
             this.delapan = new System.Windows.Forms.Button();
             this.sembilan = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.Output = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // tambah
@@ -51,7 +51,7 @@
             this.tambah.TabIndex = 0;
             this.tambah.Text = "+";
             this.tambah.UseVisualStyleBackColor = true;
-            this.tambah.Click += new System.EventHandler(this.button1_Click);
+            this.tambah.Click += new System.EventHandler(this.tambah_Click);
             // 
             // samadengan
             // 
@@ -61,6 +61,7 @@
             this.samadengan.TabIndex = 1;
             this.samadengan.Text = "=";
             this.samadengan.UseVisualStyleBackColor = true;
+            this.samadengan.Click += new System.EventHandler(this.samadengan_Click);
             // 
             // nol
             // 
@@ -70,6 +71,7 @@
             this.nol.TabIndex = 2;
             this.nol.Text = "0";
             this.nol.UseVisualStyleBackColor = true;
+            this.nol.Click += new System.EventHandler(this.nol_Click);
             // 
             // satu
             // 
@@ -79,6 +81,7 @@
             this.satu.TabIndex = 3;
             this.satu.Text = "1";
             this.satu.UseVisualStyleBackColor = true;
+            this.satu.Click += new System.EventHandler(this.satu_Click);
             // 
             // dua
             // 
@@ -88,6 +91,7 @@
             this.dua.TabIndex = 4;
             this.dua.Text = "2";
             this.dua.UseVisualStyleBackColor = true;
+            this.dua.Click += new System.EventHandler(this.dua_Click);
             // 
             // tiga
             // 
@@ -97,6 +101,7 @@
             this.tiga.TabIndex = 5;
             this.tiga.Text = "3";
             this.tiga.UseVisualStyleBackColor = true;
+            this.tiga.Click += new System.EventHandler(this.tiga_Click);
             // 
             // empat
             // 
@@ -106,6 +111,7 @@
             this.empat.TabIndex = 6;
             this.empat.Text = "4";
             this.empat.UseVisualStyleBackColor = true;
+            this.empat.Click += new System.EventHandler(this.empat_Click);
             // 
             // lima
             // 
@@ -115,6 +121,7 @@
             this.lima.TabIndex = 7;
             this.lima.Text = "5";
             this.lima.UseVisualStyleBackColor = true;
+            this.lima.Click += new System.EventHandler(this.lima_Click);
             // 
             // enam
             // 
@@ -124,6 +131,7 @@
             this.enam.TabIndex = 8;
             this.enam.Text = "6";
             this.enam.UseVisualStyleBackColor = true;
+            this.enam.Click += new System.EventHandler(this.enam_Click);
             // 
             // tujuh
             // 
@@ -133,6 +141,7 @@
             this.tujuh.TabIndex = 9;
             this.tujuh.Text = "7";
             this.tujuh.UseVisualStyleBackColor = true;
+            this.tujuh.Click += new System.EventHandler(this.tujuh_Click);
             // 
             // delapan
             // 
@@ -142,6 +151,7 @@
             this.delapan.TabIndex = 10;
             this.delapan.Text = "8";
             this.delapan.UseVisualStyleBackColor = true;
+            this.delapan.Click += new System.EventHandler(this.delapan_Click);
             // 
             // sembilan
             // 
@@ -151,20 +161,22 @@
             this.sembilan.TabIndex = 11;
             this.sembilan.Text = "9";
             this.sembilan.UseVisualStyleBackColor = true;
+            this.sembilan.Click += new System.EventHandler(this.sembilan_Click);
             // 
-            // textBox1
+            // Output
             // 
-            this.textBox1.Location = new System.Drawing.Point(155, 58);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(165, 20);
-            this.textBox1.TabIndex = 12;
+            this.Output.Location = new System.Drawing.Point(155, 58);
+            this.Output.Name = "Output";
+            this.Output.Size = new System.Drawing.Size(165, 20);
+            this.Output.TabIndex = 12;
+            this.Output.TextChanged += new System.EventHandler(this.Output_TextChanged);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.textBox1);
+            this.ClientSize = new System.Drawing.Size(480, 450);
+            this.Controls.Add(this.Output);
             this.Controls.Add(this.sembilan);
             this.Controls.Add(this.delapan);
             this.Controls.Add(this.tujuh);
@@ -198,7 +210,7 @@
         private System.Windows.Forms.Button tujuh;
         private System.Windows.Forms.Button delapan;
         private System.Windows.Forms.Button sembilan;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox Output;
     }
 }
 
